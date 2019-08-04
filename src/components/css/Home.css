@@ -1,0 +1,70 @@
+.top {
+  background: url('../../assets/header.png') no-repeat 0 0;
+  background-color: #fafafa;
+}
+.top,
+.w1,
+.el-container {
+  height: 100%;
+}
+.top .el-header,
+.w1 .el-header,
+.el-container .el-header {
+  height: 60px;
+  line-height: 60px;
+}
+.top .el-header .user,
+.w1 .el-header .user,
+.el-container .el-header .user {
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.top .el-header .el-dropdown,
+.w1 .el-header .el-dropdown,
+.el-container .el-header .el-dropdown {
+  color: #fff;
+  font-size: 14px;
+}
+.el-aside {
+  border-radius: 15px;
+  height: 600px;
+  box-shadow: 1px 1px 2px #ccc;
+  background-color: #fff;
+}
+.el-aside .top-user {
+  background: url('../../assets/avatarbgc.png') no-repeat 0 0;
+  height: 200px;
+  text-align: center;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.el-aside .top-user p {
+  font-size: 18px;
+  padding: 10px;
+}
+.el-aside .top-user span {
+  font-size: 14px;
+  padding: 10px;
+}
+.el-aside i {
+  padding-right: 5px;
+}
+.el-aside #ws {
+  width: 100%;
+  text-align: left;
+  padding: 0 30px;
+}
+.el-aside .el-menu {
+  border-right: none;
+}
+.el-aside .el-menu-item {
+  border-radius: 12px;
+}
+.el-aside .is-active {
+  color: #fff;
+  background-color: #ff8726;
+  border-radius: 12px;
+  margin: 5px;
+}

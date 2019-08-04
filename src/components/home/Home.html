@@ -1,0 +1,118 @@
+<div class="top">
+  <div class="w1">
+    <el-container>
+      <el-header>
+        <el-row>
+          <el-col :span="8">
+            <img src="../../assets/toubu.png" alt="" />
+          </el-col>
+          <el-col :span="8"> </el-col>
+          <el-col :span="8" :offset="8">
+            <el-col :span="12">
+              <img class="user" src="../../assets/avatar.png" alt="" />
+              <el-dropdown trigger="click">
+                <span class="el-dropdown-link">
+                  余周周同学欢迎您<i
+                    class="el-icon-arrow-down el-icon--right"
+                  ></i>
+                </span>
+                <el-dropdown-menu slot="dropdown">
+                  <el-dropdown-item icon="el-icon-plus"
+                    >黄金糕</el-dropdown-item
+                  >
+                  <el-dropdown-item icon="el-icon-circle-plus"
+                    >狮子头</el-dropdown-item
+                  >
+                  <el-dropdown-item icon="el-icon-circle-plus-outline"
+                    >螺蛳粉</el-dropdown-item
+                  >
+                  <el-dropdown-item icon="el-icon-check"
+                    >双皮奶</el-dropdown-item
+                  >
+                  <el-dropdown-item icon="el-icon-circle-check"
+                    >蚵仔煎</el-dropdown-item
+                  >
+                </el-dropdown-menu>
+              </el-dropdown>
+            </el-col>
+            <el-col :span="12">
+              <img class="user" src="../../assets/avatar.png" alt="" />
+              <el-dropdown trigger="click">
+                <span class="el-dropdown-link">
+                  美国<i class="el-icon-arrow-down el-icon--right"></i>
+                </span>
+                <el-dropdown-menu slot="dropdown">
+                  <el-dropdown-item icon="el-icon-plus"
+                    >黄金糕</el-dropdown-item
+                  >
+                  <el-dropdown-item icon="el-icon-circle-plus"
+                    >狮子头</el-dropdown-item
+                  >
+                  <el-dropdown-item icon="el-icon-circle-plus-outline"
+                    >螺蛳粉</el-dropdown-item
+                  >
+                  <el-dropdown-item icon="el-icon-check"
+                    >双皮奶</el-dropdown-item
+                  >
+                  <el-dropdown-item icon="el-icon-circle-check"
+                    >蚵仔煎</el-dropdown-item
+                  >
+                </el-dropdown-menu>
+              </el-dropdown>
+            </el-col>
+          </el-col>
+        </el-row>
+      </el-header>
+      <el-container>
+        <el-aside width="200px">
+          <div class="top-user">
+            <img src="../../assets/图层57.png" alt="" />
+            <p>Adminnnn</p>
+            <span>2021级04班</span>
+          </div>
+          <el-col :span="12" id="ws">
+            <el-menu
+              default-active="2"
+              class="el-menu-vertical-demo"
+              @select="select"
+            >
+              <el-menu-item index="1">
+                <i><img src="../../assets/tab1.png" alt=""/></i>
+
+                <span slot="title">用户中心</span>
+              </el-menu-item>
+              <el-menu-item index="2">
+                <i><img src="../../assets/tab2.png" alt=""/></i>
+
+                <span slot="title">测评中心</span>
+              </el-menu-item>
+              <el-menu-item index="3">
+                <i><img src="../../assets/tab3.png" alt=""/></i>
+
+                <span slot="title">课程中心</span>
+              </el-menu-item>
+              <el-menu-item index="4">
+                <i> <img src="../../assets/tab4.png" alt=""/></i>
+
+                <span slot="title">任务中心</span>
+              </el-menu-item>
+              <el-menu-item index="5">
+                <i><img src="../../assets/tab5.png" alt=""/></i>
+
+                <span slot="title">成长档案</span>
+              </el-menu-item>
+              <el-menu-item index="6">
+                <i><img src="../../assets/tab6.png" alt=""/></i>
+
+                <span slot="title">全球数据库</span>
+              </el-menu-item>
+            </el-menu>
+          </el-col>
+        </el-aside>
+        <el-main>
+          <router-view></router-view>
+        </el-main>
+      </el-container>
+    </el-container>
+  </div>
+</div>
